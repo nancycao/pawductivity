@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- Rendering and touch zoom-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Load jQuery -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<link rel="stylesheet" href="test.css" >
+	<title> Paw-ductivity </title>
+</head>
+<body>
+
+	<div id='container'>
+		<center>
+			<h1> Paw-ductivity </h1>
+		</center>
+
+		<div class='item'>
+			<h4> coins: <div id = "numCoins"> 0 </div> </h4>
+			<p>
+				<img id = "pic" src="neutral.png"
+				alt="neutral" height="300" width="170">
+			</p>
+			<center>
+				<div id="myProgress">
+	  			<div id="myBar">
+					</div>
+				</div>
+				<h4 id="label">mood: 50%</h4>
+			</center>
+
+
+		</div>
+
+		<div class='item'>
+			<p id = "timer">
+					<div id="clockdiv">
+						<div>
+							<span class="hours">00 :</span>
+							<div class="smalltext">hours</div>
+						</div>
+						<div>
+							<span class="minutes">00 :</span>
+							<div class="smalltext">minutes</div>
+						</div>
+						<div>
+							<span class="seconds">00</span>
+							<div class="smalltext2">seconds</div>
+						</div>
+					</div>
+				</p>
+				<button type="button" id = "reset"> clear </button>
+			<div class="container">
+		      <p>
+		        <label for="new-task">Add Item</label><input id="new-task" type="text"><button id="add">Add</button>
+		      </p>
+
+					<h3>Timed Task</h3>
+					<ul id="timed-tasks">
+					</ul>
+
+		      <h3>To-Do</h3>
+		      <ul id="incomplete-tasks">
+					</ul>
+
+		    </div>
+
+
+		</div>
+
+	</div>
+
+	<script src="myScript.js"></script>
+
+</body>
+
+</html>
