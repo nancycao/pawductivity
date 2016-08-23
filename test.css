@@ -30,9 +30,7 @@ p {
   padding-top: 10px;
 }
 
-#numCoins {
-  clear: both;
-}
+
 #timer {
   text-align: right;
   color: #888;
@@ -230,4 +228,8 @@ ul li.editMode label {
     width: 50%;
     height: 100%;
     background-color: #fdfd96;
+}
+
+#coinBox {
+  align: center;
 }
