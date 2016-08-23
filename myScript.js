@@ -38,7 +38,7 @@ function moodUpdate() {
       width = 100;
     }
     added = 0;
-    width -= 0.01;
+    width -= 0.02;
     elem.style.width = width + '%';
     document.getElementById("label").innerHTML = 'mood: ' + Math.round(width) + '%';
     }
@@ -205,9 +205,9 @@ function changeNeutral() {
 
 
 function setTimer() {
-    var hour = prompt("Type in number of hours: (You may type in 0)", "");
-    var min = prompt("Type in number of minutes: (You may type in 0)", "");
-    var sec = prompt("Type in number of seconds: (You may type in 0)", "");
+    var hour = prompt("Type in number of hours: (0-24)", "");
+    var min = prompt("Type in number of minutes: (0-60)", "");
+    var sec = prompt("Type in number of seconds: (0-60)", "");
     var time = parseInt(sec) + parseInt(hour*60*60) + parseInt(min*60);
     initializeClock('clockdiv', time);
   }
@@ -226,9 +226,9 @@ function getTimeRemaining(endtime) {
 }
 
 function initializeClock(id, time) {
-  var timeInMinutes = time; //in seconds
+  var timeInSeconds = time; //in seconds
   var currentTime = Date.parse(new Date());
-  var endtime = new Date(currentTime + timeInMinutes*1000);
+  var endtime = new Date(currentTime + timeInSeconds*1000);
   var clock = document.getElementById(id);
   var hoursSpan = clock.querySelector('.hours');
   var minutesSpan = clock.querySelector('.minutes');
