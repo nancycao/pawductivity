@@ -8,19 +8,24 @@
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<link rel="stylesheet" href="test.css" >
 	<title> Paw-ductivity </title>
+	<link rel="icon" href="icon.png">
+
 </head>
 <body>
 
-	<div id='container'>
-		<center>
-			<h1> Paw-ductivity </h1>
-		</center>
+		<img id = "logo" src="logo.png"
+		alt="Paw-ductivity" height="90" width="295">
 
+		<div id="content">
+    <img src = "coin.png" alt = "coins:" height="20" width="20" class="ribbon"/>
+    <div = "numCoins"> 0 </div>
+	</div>
+
+		<div id='container'>
 		<div class='item'>
-			<h4> coins: <div id = "numCoins"> 0 </div> </h4>
 			<p>
 				<img id = "pic" src="neutral.png"
-				alt="neutral" height="300" width="170">
+				alt="neutral" height="250" width="140">
 			</p>
 			<center>
 				<div id="myProgress">
@@ -34,6 +39,8 @@
 		</div>
 
 		<div class='item'>
+			<button type="button" id = "reset"> clear </button>
+
 			<p id = "timer">
 					<div id="clockdiv">
 						<div>
@@ -50,10 +57,9 @@
 						</div>
 					</div>
 				</p>
-				<button type="button" id = "reset"> clear </button>
-			<div class="container">
+			<div class="container" id = "todo">
 		      <p>
-		        <label for="new-task">Add Item</label><input id="new-task" type="text"><button id="add">Add</button>
+		        <label for="new-task">Add Item</label><input id="new-task" type="text" placeholder = "Type here..."><button id="add">Add</button>
 		      </p>
 
 					<h3>Timed Task</h3>

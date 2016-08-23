@@ -25,6 +25,14 @@ p {
   font-size: 15x;
 }
 
+#logo {
+  position: relative;
+  padding-top: 10px;
+}
+
+#numCoins {
+  clear: both;
+}
 #timer {
   text-align: right;
   color: #888;
@@ -38,7 +46,7 @@ p {
     display: inline-block;
     font-weight: 100;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #clockdiv > div{
@@ -68,17 +76,13 @@ html,body{
   height:100%;
 }
 
-#setTime {
-
-}
-
-
 #container{
   height:100%;
   width:100%;
   font-size:0;
   margin:0 auto;
 }
+
 .item{
   padding-top: 5px;
   display:inline-block;
@@ -96,6 +100,8 @@ html,body{
   text-align: left;
   width: 400px;
   margin: 100px auto 0;
+  position: relative;
+  top: -120px;
 }
 
 ul {
