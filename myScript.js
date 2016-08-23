@@ -205,9 +205,10 @@ function changeNeutral() {
 
 
 function setTimer() {
-    var hour = prompt("Type in number of hours:", "");
-    var min = prompt("Type in number of minutes:", "");
-    var time = parseInt(hour*60) + parseInt(min);
+    var hour = prompt("Type in number of hours: (You may type in 0)", "");
+    var min = prompt("Type in number of minutes: (You may type in 0)", "");
+    var sec = prompt("Type in number of seconds: (You may type in 0)", "");
+    var time = parseInt(sec) + parseInt(hour*60*60) + parseInt(min*60);
     initializeClock('clockdiv', time);
   }
 
@@ -225,9 +226,9 @@ function getTimeRemaining(endtime) {
 }
 
 function initializeClock(id, time) {
-  var timeInMinutes = time;
+  var timeInMinutes = time; //in seconds
   var currentTime = Date.parse(new Date());
-  var endtime = new Date(currentTime + timeInMinutes*60*1000);
+  var endtime = new Date(currentTime + timeInMinutes*1000);
   var clock = document.getElementById(id);
   var hoursSpan = clock.querySelector('.hours');
   var minutesSpan = clock.querySelector('.minutes');
