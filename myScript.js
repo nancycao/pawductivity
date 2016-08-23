@@ -64,7 +64,7 @@ var createNewListElement = function(taskString) {
   editInput.type = "text";
   editButton.innerHTML = "Edit";
   editButton.className = "edit";
-  deleteButton.innerHTML = "Delete";
+  deleteButton.innerHTML = "X";
   deleteButton.className = "delete";
   label.innerHTML = taskString;
   timeButton.innerHTML = "Time";
@@ -76,8 +76,8 @@ var createNewListElement = function(taskString) {
   listItem.appendChild(label);
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
-  listItem.appendChild(deleteButton);
   listItem.appendChild(timeButton);
+  listItem.appendChild(deleteButton);
 
   return listItem;
 }
